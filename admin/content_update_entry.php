@@ -47,7 +47,7 @@
 				<label>Publish</label>
 			</td>
 			<td>
-				<input type="checkbox" <?php if($row['publish'] == 1) echo 'checked="checked"' ?>/>
+				<input type="checkbox" name="publish" <?php if($row['publish'] == 1) echo 'checked="checked"' ?>/>
 			</td>
 		</tr>
 		<tr>

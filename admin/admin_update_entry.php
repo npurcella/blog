@@ -20,7 +20,8 @@
 		$id = $_POST['id'];
 		$title = trim($_POST['title']);
 		$content = trim($_POST['content']);	
-		$picture = '';
+		$publish = isset($_POST['publish']) ? 1 : 0; echo $publish;
+			$picture = '';
 		$alerts = '';
 		$errors = '';	
 
@@ -32,7 +33,6 @@
 				$errors = 'File size cannot be greater than 16M<br>';
 			}
 		}
-		$publish = isset($_POST['publish']) ? true : false;
 		if($title == '' || $content == '') {
 			if($content == '') {
 				$errors = 'Content is a required field<br>' . $errors;

@@ -87,9 +87,9 @@
 				</div>
 				<hr>
 				<h3>Still To Do:</h3>
-				<p>something on admin front page empty spot</p>
 				<p>work on front end - pagination, sorting, individual pages</p>
-				<p>update publish not working on both, image update not working on remote
+				<p>update image update not working on remote</p>
+				<p>ability to create acct and then add comments</p>
 				<p>move to code igniter</p>
 			<?php } ?>
 	</div>

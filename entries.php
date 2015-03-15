@@ -11,7 +11,7 @@
 			'<td>'.'<img src="admin/showimage.php?id='.$row['id'].'" width="80" height="60"/>'.'</td></tr>';
 		}
 		else {
-			echo '<tr><td class="title"><a href="admin_update_entry.php?id='.$row['id'].'">'.$row['title'].'</a></td></tr>'.
+			echo '<tr><td class="title"><a href="#">'.$row['title'].'</a></td></tr>'.
 			'<tr>'.'<td class="created">'.$created.'</tr>'.'</tr>'.
 			'<tr><td class="content">'.$row['content'].'</td>'.
 			'<td>'.'<img src="assets/library/noImage.png" width="80" height="60"/>'.'</td></tr>';

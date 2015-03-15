@@ -6,10 +6,10 @@
 	$results = $db->query("SELECT * FROM blog");
 	foreach ($results as $row) {
 		if($row['publish'] == 1) {
-			$checked = '<input type="checkbox" checked="checked"/>';
+			$checked = '<input type="checkbox" disabled checked="checked"/>';
 		}
 		else {
-			$checked = '<input type="checkbox"/>';
+			$checked = '<input type="checkbox" disabled/>';
 		}
 		echo '<tr>';
 		if(!isset($row['picture'])) {

@@ -1,0 +1,3 @@
+do not create at remote repo first
+
+check in from local to remote, remote will auto sense it and create
