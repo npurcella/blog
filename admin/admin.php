@@ -91,7 +91,6 @@
 				<p>work on front end - pagination, sorting, individual pages</p>
 				<p>update publish not working on both, image update not working on remote
 				<p>move to code igniter</p>
-				<p>later: put files into github</p>
 			<?php } ?>
 	</div>
 </div>
