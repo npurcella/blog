@@ -32,6 +32,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Lobster|Rokkitt:400,700' rel='stylesheet' type='text/css'>
@@ -88,7 +89,7 @@
 				<hr>
 				<h3>Still To Do:</h3>
 				<p>work on front end - pagination, sorting, individual pages</p>
-				<p>update image update not working on remote</p>
+				<p>look good on mobile</p>
 				<p>ability to create acct and then add comments</p>
 				<p>move to code igniter</p>
 			<?php } ?>
