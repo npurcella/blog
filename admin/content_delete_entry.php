@@ -23,8 +23,8 @@
 		<label>Publish</label>
 		<input type="checkbox" id="publish" name="publish" disabled <?php if($row['publish'] == 1) echo 'checked="checked"' ?>/>
 	</div>
-	<div class="form-set submit">
-		<input type="submit" value="Delete Blog Entry" name="delete" onclick="return confirm('Are you sure you want to delete this blog entry?')"/>
+	<div class="form-set">
+		<input type="submit" id="submit" value="Delete Blog Entry" name="delete" onclick="return confirm('Are you sure you want to delete this blog entry?')"/>
 	</div>
 	<input type="hidden" name="id" value="<?php if(isset($_GET['id'])) { echo $_GET['id']; }?>"/>
 </form>

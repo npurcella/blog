@@ -29,7 +29,7 @@
 		<label>Publish</label>
 		<input type="checkbox" id="publish" name="publish" <?php if($row['publish'] == 1) echo 'checked="checked"' ?>/>
 	</div>
-	<div class="form-set submit">
+	<div class="form-set">
 		<input type="submit" id="submit" value="Update Blog Entry" name="update"/>
 	</div>
 	<input type="hidden" name="id" value="<?php if(isset($_GET['id'])) { echo $_GET['id']; }?>"/>

@@ -49,30 +49,18 @@
 	<div id="main-content">
 		<?php if(! isset($_SESSION['admin'])) { ?>
 			<h3>Login Form</h3>
-			<form action="" method="post">
-				<table id="create-table">
-					<tr>
-						<td class="right">
-							<label>Name</label>
-						</td>
-						<td>
-							<input class="resp-input" type="text" name="name" maxlength="255"/>
-						</td>
-					</tr>
-					<tr>
-						<td class="right">
-							<label>Password</label>
-						</td>
-						<td>
-							<input class="resp-input" type="password" name="password" maxlength="255"/>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2" class="center">
-							<input type="submit" value="Admin Logon" name="submit"/>
-						</td>
-					</tr>
-				</table>
+			<form id="login-form" action="" method="post">
+				<div class="form-set">
+					<label>Name</label>
+					<input type="text" name="name" maxlength="255"/>
+				</div>
+				<div class="form-set">
+					<label>Password</label>
+					<input type="password" name="password" maxlength="255"/>
+				</div>
+				<div class="form-set">
+					<input type="submit" id="submit" value="Admin Logon" name="submit"/>
+				</div>
 			</form>
 			<?php }
 			else { ?>
@@ -89,7 +77,7 @@
 				<hr>
 				<h3>Still To Do:</h3>
 				<p>work on front end - individual pages, sorting, pagination</p>
-				<p>ADD Page & general overall check - look good on mobile</p>
+				<p>Remove / on update</p>
 				<p>ability to create acct and then add comments</p>
 				<p>move to code igniter</p>
 			<?php } ?>

@@ -93,33 +93,6 @@ p.error  {
 #rules li {
 	padding: 5px;
 }
-#create-table, #update-table {
-	margin: 0 auto;
-	width: 80%;
-}
-#create-table th, #update-table th {
-	font-weight: 700;
-	font-size: 18px;
-}
-#create-table td, #update-table td {
-	text-align: left;
-	padding: 5px;
-	vertical-align: top;
-}
-#create-table td.right {
-	text-align: right;
-	vertical-align: top;
-	width: 25%;
-}
-#create-table td.center, #update-table td.center {
-	text-align: center;
-}
-#create-table td .resp-input {
-	width: 75%;
-}
-#create-table .resp-input {
-	width: 95%;
-}
 #admin-footer {
 	padding: 10px;
 	text-align: center;
@@ -213,6 +186,9 @@ p.error  {
 	#main-blog-content {
 		margin: 50px 75px;
 	}
+	#login-form {
+		padding: 50px 75px;
+	}
 	#content {
 		width: 75%;
 		float: left;
@@ -221,27 +197,26 @@ p.error  {
 		width: 25%;
 		float: left;
 	}
-
 	.form-set input, textarea {
-		width: 65%;
+		width: 75%;
+		box-sizing: border-box;
 	}
 	.form-set input#publish {
-		margin-left: -150px;
+		margin-left: -350px;
 	}	
-	input #submit {
-		width: 1000px;
-	}
-
 	.form-set img {
 		width: 45%;
 		height: 45%;
 	}
 	.form-set label {
-		width: 35%;
-		margin-right: 30px;
+		width: 25%;
+		float: left;
 		vertical-align: top;
+		box-sizing: border-box;
 	}
-
+	#submit {
+		width: auto;
+	}
 }
 
 #blog-footer {
