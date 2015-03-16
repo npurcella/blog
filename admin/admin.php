@@ -88,8 +88,8 @@
 				</div>
 				<hr>
 				<h3>Still To Do:</h3>
-				<p>work on front end - pagination, sorting, individual pages</p>
-				<p>look good on mobile</p>
+				<p>work on front end - individual pages, sorting, pagination</p>
+				<p>ADD Page & general overall check - look good on mobile</p>
 				<p>ability to create acct and then add comments</p>
 				<p>move to code igniter</p>
 			<?php } ?>
