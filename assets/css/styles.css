@@ -166,27 +166,84 @@ p.error  {
 #main-blog-content {
 	background-color: white;
 	min-height: 200px;
-	margin: 50px 75px;
+	margin: 30px 25px;
 	border-radius: 10px;
 	overflow: auto;
 }
-#entry-table {
-	margin: 30px 70px 20px;
-	border: 10px;
+#title-and-created {
+	margin: 25px auto 10px;
+	width: 100%;
+	float: left;
 }
-#entry-table td {
-	vertical-align: top;
+#admin-title-and-created {
+	width: 100%;
+	float: left;
 }
-#entry-table .content {
+#content {
+	width: 100%;
 	text-align: left;
-	padding: 0 20px 20px;
+	padding: 0 15px;
+	box-sizing: border-box;
 }
-#entry-table td.title {
-	padding: 30px 20px 5px;
+#admin-content {
+	text-align: left;
+	padding: 10px 10px 0;
+	margin-bottom: 30px;
 }
-#entry-table td.created {
-	padding: 5px 20px 10px;
+#picture img {
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
+	box-sizing: border-box;
 }
+.form-set {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.form-set label, input, textarea {
+	width: 100%;
+}
+.form-set img {
+	width: 100%;
+	height: 100%;
+}
+
+/* Media Query for tablet size and above (just used two breakpoints) */
+@media screen and (min-width: 768px){
+	#main-blog-content {
+		margin: 50px 75px;
+	}
+	#content {
+		width: 75%;
+		float: left;
+	}
+	#picture {
+		width: 25%;
+		float: left;
+	}
+
+	.form-set input, textarea {
+		width: 65%;
+	}
+	.form-set input#publish {
+		margin-left: -150px;
+	}	
+	input #submit {
+		width: 1000px;
+	}
+
+	.form-set img {
+		width: 45%;
+		height: 45%;
+	}
+	.form-set label {
+		width: 35%;
+		margin-right: 30px;
+		vertical-align: top;
+	}
+
+}
+
 #blog-footer {
 	padding: 10px;
 	text-align: center;
