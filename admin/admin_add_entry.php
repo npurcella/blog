@@ -16,7 +16,10 @@
 			$title = trim($_POST['title']);
 			$content = trim($_POST['content']);
 			$publish = isset($_POST['publish']) ? true : false;
-
+			if(get_magic_quotes_gpc()) {
+				$title = stripslashes($title);
+				$content = stripslashes($content);
+			}
 			if($_FILES['picture']['size'] > 0) {
 				if($_FILES['picture']['size'] < 16777215) {
 					$picture = file_get_contents($_FILES['picture']['tmp_name']);

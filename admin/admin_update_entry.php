@@ -21,6 +21,10 @@
 		$id = $_POST['id'];
 		$title = trim($_POST['title']);
 		$content = trim($_POST['content']);	
+		if(get_magic_quotes_gpc()) {
+			$title = stripslashes($title);
+			$content = stripslashes($content);
+		}
 		$publish = isset($_POST['publish']) ? 1 : 0;
 		$picture = '';
 		$alerts = '';
