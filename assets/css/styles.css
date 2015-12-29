@@ -76,10 +76,16 @@ p.error  {
 	background: linear-gradient(to bottom, rgba(126,209,230,1) 0%, rgba(157,226,245,1) 1%, rgba(255,255,255,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ed1e6', endColorstr='#ffffff', GradientType=0 );	
 }
-#main-content h3 {
+#main-content h3, #blog-content h3 {
 	font-family: 'Lobster', sans-serif;
 	font-size: 22px;
 	padding-bottom: 15px;
+}
+#blog-content {
+	width: 100%;
+}
+#blog-content p {
+	padding-bottom: 25px;
 }
 #rules {
 	margin: 0 auto;
@@ -169,6 +175,17 @@ p.error  {
 	border-radius: 10px;
 	box-sizing: border-box;
 }
+#blog-picture {
+	display: block;
+	margin: 0 auto;
+}
+#blog-picture img {
+	box-sizing: border-box;
+	border-radius: 10px;
+	height: 20%;
+	width: 20%;
+	margin-bottom: 30px;
+}
 .form-set {
 	width: 100%;
 	margin-bottom: 20px;
@@ -185,6 +202,7 @@ p.error  {
 @media screen and (min-width: 768px){
 	#main-blog-content {
 		margin: 50px 75px;
+		padding: 25px;
 	}
 	#login-form {
 		padding: 50px 75px;
